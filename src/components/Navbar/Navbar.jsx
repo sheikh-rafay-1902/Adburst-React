@@ -14,7 +14,7 @@ function Navbar() {
       {/* Navbar */}
       <nav
         data-aos="fade-down"
-        className="bg-gradient-to-r from-[#0c0494] via-[#080a0f] to-[#0c0494] text-white shadow-md backdrop-blur-md"
+        className="z-1000 relative bg-gradient-to-r from-[#0c0494] via-[#080a0f] to-[#0c0494] text-white shadow-md backdrop-blur-md"
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo and Site Name */}
@@ -42,10 +42,10 @@ function Navbar() {
             ))}
 
             {/* Get Started Button with Dropdown */}
-            <div className="relative">
+            <div className="relative z-10"> {/* Ensure the parent has a higher z-index */}
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="hover:text-[#5f63ac] transition duration-300 transform hover:scale-105"
+                className="hover:text-[#5f63ac] transition duration-300 transform hover:scale-105 z-20"  // Ensure button is on top with z-20
               >
                 Get Started
               </button>
@@ -55,6 +55,10 @@ function Navbar() {
                 <ul
                   className="absolute right-0 mt-2 w-40 bg-white text-black rounded-lg shadow-lg p-2 space-y-1 transition-all duration-300 ease-in-out"
                   data-aos="fade-down"
+                  style={{
+                    zIndex: 30,  // Ensure dropdown is on top of other content
+                    position: 'absolute', // To position the dropdown correctly
+                  }}
                 >
                   <li>
                     <a
@@ -75,6 +79,7 @@ function Navbar() {
                 </ul>
               )}
             </div>
+
           </div>
         </div>
       </nav>

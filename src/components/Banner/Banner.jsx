@@ -38,8 +38,8 @@ const Banner = () => {
   };
 
   return (
-    <section className="relative z-10">
-      <Slider {...settings} className="absolute top-0 left-0 w-full h-full">
+    <section className="relative z-1">
+      <Slider {...settings} className="absolute top-0 left-0 w-full h-full z-5">
         {/* Slide 1 */}
         <div className="relative">
           <img
@@ -72,6 +72,7 @@ const Banner = () => {
             </h3>
           </div>
         </div>
+        
       </Slider>
     </section>
   );

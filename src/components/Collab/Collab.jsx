@@ -60,10 +60,10 @@ export default function Collab() {
   ];
 
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="mt-20 relative isolate px-6 bg-custom-gradient-7 pt-14 lg:px-8 ">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 "
       >
         <div
           style={{
@@ -73,10 +73,10 @@ export default function Collab() {
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
       </div>
-      <div className="py-24 sm:py-32">
+      <div className="py-24 pt-4">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2
-            className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-blue-500 to-pink-500"
+            className="text-3xl font-bold text-white flex justify-center "
             data-aos="fade-up"
           >
             Our Premium Partners

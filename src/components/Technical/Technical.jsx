@@ -22,7 +22,7 @@ const Technical = () => {
   }, []);
 
   return (
-    <div className="min-h-[60vh] bg-custom-gradient bg-opacity-50 py-6">
+    <div className="min-h-[60vh] bg-custom-gradient-7 bg-opacity-50 py-6">
       <div className="container mx-auto px-6 md:px-12 mt-11">
         {/* Heading Section */}
         <div className="text-center mb-6" data-aos="fade-up">

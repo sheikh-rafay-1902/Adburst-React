@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faWhatsapp, faSkype } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faLocationCrosshairs } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
+
+
 
 const Footer = () => {
     useEffect(() => {
@@ -10,7 +16,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="flex justify-around items-center bg-gradient-to-r from-[#2a7f6a] to-[#124a6f] bg-opacity-50 text-white p-8">
+        <div className="flex justify-around items-center bg-custom-gradient-6 text-white p-8">
             {/* Logo and Social Icons Section */}
             <div className="text-center" data-aos="fade-up">
                 {/* Icons Section - Now on Top */}
@@ -39,10 +45,23 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div data-aos="fade-up" data-aos-delay="200">
                     <h2 className="text-lg font-semibold mb-2">Contact Info</h2>
-                    <p className="mb-2">📍 9 Rodgers Quay, Belfast, Antrim, United Kingdom</p>
-                    <p className="mb-2">📧 contact@adburst.uk</p>
-                    <p className="mb-2">📧 info@adburst.uk</p>
-                    <p>📞 +447724695771</p>
+                    <p className="mb-2">
+                        <FontAwesomeIcon icon={faLocationCrosshairs} className="mr-2" />
+                        9 Rodgers Quay, Belfast, Antrim, United Kingdom</p>
+                    <p className="mb-2">
+                        <a href="mailto:contact@adburst.uk">
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> contact@adburst.uk
+                        </a>
+                    </p>
+                    <p className="mb-2">
+                        <a href="mailto:info@adburst.uk">
+                            <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@adburst.uk
+                        </a>
+                    </p>
+
+                    <p>
+                        <FontAwesomeIcon icon={faPhone} className="mr-2" />
+                        +447724695771</p>
                 </div>
             </div>
         </div>
