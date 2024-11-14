@@ -1,0 +1,46 @@
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%; /* Start from the left edge */
+  animation: marquee-content 15s linear infinite;
+  transition: transform 0.3s; /* Add transition for smooth scaling effect */
+}
+
+/* Hover effect for marquee content */
+.marquee-content:hover {
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.marquee-content img {
+  display: inline-block; /* Ensure images are treated as inline elements */
+  transition: transform 0.3s; /* Smooth scaling for images */
+}
+
+/* Hover effect for images */
+.marquee-content img:hover {
+  transform: scale(1.2); /* Scale the image larger on hover */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@keyframes marquee-content {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
