@@ -16,7 +16,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="flex justify-around items-center bg-custom-gradient-6 text-white p-8">
+        <div className="flex justify-around items-center bg-custom-gradient-6 h-[310px] bg-opacity-50 text-white p-8">
             {/* Logo and Social Icons Section */}
             <div className="text-center" data-aos="fade-up">
                 {/* Icons Section - Now on Top */}

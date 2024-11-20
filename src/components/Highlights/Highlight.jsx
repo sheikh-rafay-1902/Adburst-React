@@ -23,7 +23,7 @@ const Highlight = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-custom-gradient">
+    <section className="py-16 bg-custom-gradient-8">
       {/* Heading */}
       <div className="text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-white font-serif mb-4">

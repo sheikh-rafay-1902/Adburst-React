@@ -16,7 +16,7 @@ function Navbar2(){
   {/* Navbar */}
   <nav
     data-aos="fade-down"
-    className="relative bg-gradient-to-r from-[#0c0494] via-[#080a0f] to-[#0c0494] text-white shadow-md backdrop-blur-md z-50"
+    className="relative bg-custom-gradient-6 bg-opacity-20 text-white shadow-md backdrop-blur-md z-50"
   >
     <div className="container mx-auto px-4 py-4 flex justify-between items-center">
       {/* Logo and Site Name */}
