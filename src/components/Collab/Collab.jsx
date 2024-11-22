@@ -38,24 +38,24 @@ export default function Collab() {
 
   const logos = [
     {
-      alt: "Amazon",
-      src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+      alt: "AdMop",
+      src: "./Images/admop.png"
     },
     {
       alt: "Google",
-      src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+      src: "./Images/google.png"
     },
     {
       alt: "Magnite",
-      src: "https://iabtechlab.com/wp-content/uploads/2024/01/Magnite-logo-black.svg-1024x332.png"
+      src: "./Images/magnite.jpg"
     },
     {
-      alt: "Sovrn",
-      src: "https://adspace-tech.net/assets/images/sovrn.png"
+      alt: "Criteo",
+      src: "./Images/criteo.png"
     },
     {
-      alt: "Outbrain",
-      src: "https://adspace-tech.net/assets/images/outbrain.png"
+      alt: "Pubmatic",
+      src: "./Images/pubmatic.png"
     }
   ];
 
